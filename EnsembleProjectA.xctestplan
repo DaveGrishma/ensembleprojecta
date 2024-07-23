@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "7C26A176-D264-4128-8182-70EC6EA385B8",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:EnsembleProjectA.xcodeproj",
+        "identifier" : "6E5A192F2C4E85BA009E3C62",
+        "name" : "EnsembleProjectATests"
+      }
+    }
+  ],
+  "version" : 1
+}
