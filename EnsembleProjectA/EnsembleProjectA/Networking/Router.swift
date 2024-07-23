@@ -20,7 +20,7 @@ extension Router {
     var path: String {
         switch self {
         case .searchMovie(let query):
-            return "https://www.omdbapi.com/?t=\(query)&apikey=1f85142d"
+            return "https://www.omdbapi.com/?t=\(query)&apikey=\(APIKEY)"
         }
     }
 }

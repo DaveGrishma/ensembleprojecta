@@ -16,6 +16,7 @@
 		6E5A19492C4E8A67009E3C62 /* MockMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A19482C4E8A67009E3C62 /* MockMovieService.swift */; };
 		6E5A194B2C4E8B40009E3C62 /* UIViewController+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A194A2C4E8B40009E3C62 /* UIViewController+Extentions.swift */; };
 		6E5A194D2C4E8BD2009E3C62 /* DispatchQueue+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A194C2C4E8BD2009E3C62 /* DispatchQueue+Extentions.swift */; };
+		B14AFEB62C4F51A7007A7131 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14AFEB52C4F51A7007A7131 /* Constant.swift */; };
 		B1A20B9C2C4D581F00F7E7CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A20B9B2C4D581F00F7E7CE /* AppDelegate.swift */; };
 		B1A20B9E2C4D581F00F7E7CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A20B9D2C4D581F00F7E7CE /* SceneDelegate.swift */; };
 		B1A20BA52C4D582400F7E7CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1A20BA42C4D582400F7E7CE /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		6E5A19482C4E8A67009E3C62 /* MockMovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieService.swift; sourceTree = "<group>"; };
 		6E5A194A2C4E8B40009E3C62 /* UIViewController+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extentions.swift"; sourceTree = "<group>"; };
 		6E5A194C2C4E8BD2009E3C62 /* DispatchQueue+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extentions.swift"; sourceTree = "<group>"; };
+		B14AFEB52C4F51A7007A7131 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B1A20B982C4D581F00F7E7CE /* EnsembleProjectA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnsembleProjectA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A20B9B2C4D581F00F7E7CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1A20B9D2C4D581F00F7E7CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		B14AFEB42C4F517A007A7131 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B14AFEB52C4F51A7007A7131 /* Constant.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		B1A20B8F2C4D581F00F7E7CE = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +178,7 @@
 		B1A20B9A2C4D581F00F7E7CE /* EnsembleProjectA */ = {
 			isa = PBXGroup;
 			children = (
+				B14AFEB42C4F517A007A7131 /* Common */,
 				B1A20BE52C4D741600F7E7CE /* Extensions */,
 				B1A20BDB2C4D653E00F7E7CE /* Services */,
 				B1A20BCC2C4D5BC900F7E7CE /* Scenes */,
@@ -396,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1A20BE32C4D71B200F7E7CE /* SearchMovieCell.swift in Sources */,
+				B14AFEB62C4F51A7007A7131 /* Constant.swift in Sources */,
 				B1A20BE92C4D800200F7E7CE /* String+Extensions.swift in Sources */,
 				B1A20B9C2C4D581F00F7E7CE /* AppDelegate.swift in Sources */,
 				6E5A194B2C4E8B40009E3C62 /* UIViewController+Extentions.swift in Sources */,
