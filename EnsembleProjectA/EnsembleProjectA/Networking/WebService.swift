@@ -49,31 +49,14 @@ struct WebService: WebServiceType {
             .mapError { error in
                 return handleError(error)
             }
-            .catch { error -> AnyPublisher<ReturnType, NetworkRequestError> in
-                // Handle empty data case
-                if error == .decodingError && type == Empty.self{
-                    // Create an empty instance of T if possible, or handle as needed
-                    let emptyResponse = Empty() // Assuming T has a default initializer
-                    return Just(emptyResponse as! ReturnType)
-                        .setFailureType(to: NetworkRequestError.self)
-                        .eraseToAnyPublisher()
-                } else {
-                    return Fail(error: error)
-                        .eraseToAnyPublisher()
-                }
-            }
             .eraseToAnyPublisher()
     }
     
     private func createRequest(router: Router) -> URLRequest? {
         guard let url = URL(string: router.path) else { return nil }
         var request: URLRequest = URLRequest(url: url)
-        request.httpMethod = router.method.rawValue
-        request.httpBody = router.parameters
+        request.httpMethod = router.methodType.rawValue
         print("[\(request.httpMethod!)] '\(request.url!)'")
-        if router.method == .post {
-            request.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
-        }
         return request
     }
 }
@@ -89,7 +72,7 @@ enum NetworkRequestError: LocalizedError, Equatable {
     case error4xx(_ code: Int)
     case serverError
     case error5xx(_ code: Int)
-    case decodingError
+    case decodingError(description: String)
     case urlSessionFailed(_ error: URLError)
     case timeOut
     case unknownError
@@ -117,14 +100,29 @@ extension WebService {
     /// - Returns: Readable NetworkRequestError
     private func handleError(_ error: Error) -> NetworkRequestError {
         switch error {
-        case is Swift.DecodingError:
-            return .decodingError
+        case let decodingError as DecodingError:
+            return handleDecodingError(decodingError)
         case let urlError as URLError:
             return .urlSessionFailed(urlError)
         case let error as NetworkRequestError:
             return error
         default:
             return .unknownError
+        }
+    }
+    
+    private func handleDecodingError(_ error: DecodingError) -> NetworkRequestError {
+        switch error {
+        case .typeMismatch(let type, let context):
+            return .decodingError(description: "Type '\(type)' mismatch: \(context.debugDescription)")
+        case .valueNotFound(let type, let context):
+            return .decodingError(description: "Value not found for type '\(type)': \(context.debugDescription)")
+        case .keyNotFound(let key, let context):
+            return .decodingError(description: "Key '\(key)' not found: \(context.debugDescription)")
+        case .dataCorrupted(let context):
+            return .decodingError(description: "Data corrupted: \(context.debugDescription)")
+        @unknown default:
+            return .decodingError(description: "Unknown decoding error")
         }
     }
 }

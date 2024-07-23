@@ -25,7 +25,11 @@ class Navigator : NavigatorType {
     func start(with flow: UserEntryFlow) {
         switch flow {
         case .searchMovie:
-            <#code#>
+            let searchMovieVm = SearchViewModel(movieServices: MovieServices(webService: WebService()))
+            let searchMovieVc = UIStoryboard(name: "Movie", bundle: nil).instantiateViewController(identifier: "SearchMovieViewController") { coder in
+                return SearchMovieViewController(coder: coder, viewModel: searchMovieVm)
+            }
+            self.navController.pushViewController(searchMovieVc, animated: false)
         }
     }
     

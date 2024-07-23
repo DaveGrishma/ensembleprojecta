@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "486B6610-6DED-4EF8-8DEC-DC074E4DD2BC"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AFB37511-0345-44F4-814C-AC0D52820E23"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnsembleProjectA/Scenes/Movie/SearchMovie/SearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "searchMovie(query:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AFB37511-0345-44F4-814C-AC0D52820E23 - 2dd052b788fabf4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (EnsembleProjectA.SearchResponse) -&gt; () in EnsembleProjectA.SearchViewModel.searchMovie(query: Swift.String) -&gt; ()"
+                  moduleName = "EnsembleProjectA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Downloads/Ensemble/EnsembleProjectA/EnsembleProjectA/Scenes/Movie/SearchMovie/SearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1376">
+               </Location>
+               <Location
+                  uuid = "AFB37511-0345-44F4-814C-AC0D52820E23 - 2dd052b788fabf4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (EnsembleProjectA.SearchResponse) -&gt; () in EnsembleProjectA.SearchViewModel.searchMovie(query: Swift.String) -&gt; ()"
+                  moduleName = "EnsembleProjectA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Downloads/Ensemble/EnsembleProjectA/EnsembleProjectA/Scenes/Movie/SearchMovie/SearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1596">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42692131-C12F-4F7F-BBA8-85DD78766BF6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnsembleProjectA/Scenes/Movie/SearchMovie/SearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "searchMovie(query:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "42692131-C12F-4F7F-BBA8-85DD78766BF6 - ec731cd50bed893c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;EnsembleProjectA.NetworkRequestError&gt;) -&gt; () in EnsembleProjectA.SearchViewModel.searchMovie(query: Swift.String) -&gt; ()"
+                  moduleName = "EnsembleProjectA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Downloads/Ensemble/EnsembleProjectA/EnsembleProjectA/Scenes/Movie/SearchMovie/SearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "388">
+               </Location>
+               <Location
+                  uuid = "42692131-C12F-4F7F-BBA8-85DD78766BF6 - ec731cd50bed893c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;EnsembleProjectA.NetworkRequestError&gt;) -&gt; () in EnsembleProjectA.SearchViewModel.searchMovie(query: Swift.String) -&gt; ()"
+                  moduleName = "EnsembleProjectA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Downloads/Ensemble/EnsembleProjectA/EnsembleProjectA/Scenes/Movie/SearchMovie/SearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "368">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "162DF1F0-D9C5-40E5-A9F1-DC56354BC245"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnsembleProjectA/Networking/WebService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "handleDecodingError(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
